@@ -4,4 +4,4 @@ Cooming Soon! :)
 
 Data will be released after approval process.  
 
-Code will be published once the author of this repo have time.
+Code will be published once the author of this repo has time.
