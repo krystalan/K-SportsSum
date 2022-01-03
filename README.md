@@ -17,6 +17,7 @@ In this Section, we introduce how to build a two-step baseline system for Sports
 The selector is a text classification model. In our work, we resort to the following toolkits:
 - [Chinese-Text-Classification-Pytorch](https://github.com/649453932/Chinese-Text-Classification-Pytorch): This toolkit includes multiple codes (both training and inference) of text classification model before BERT era, such as TextCNN.
 - [Bert-Chinese-Text-Classification-Pytorch](https://github.com/649453932/Bert-Chinese-Text-Classification-Pytorch): This toolkit contains text classification codes after BERT era, e.g., BERT, ERNIE.  
+
 These two toolkits are very useful for buiding a Chinese text classification system.
 
 #### 2.2 Rewriter
