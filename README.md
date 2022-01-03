@@ -11,7 +11,7 @@ Data will be released after approval process.（Before the Spring Festival）
     <br>
 </p>
 
-In this Section, we introduce how to build two-step baseline system for Sports Game Summarization. As the above Figure shown, the baseline framework first select important commentary sentences from original live commentary documents through a text classification model. Ck represents each commentary sentence and Cik denotes each selected important sentence. Further, we should convert each selected sentence to news-style sentence through a NLG model. Rik is the generated sentence corresponding to Cik.
+In this Section, we introduce how to build a two-step baseline system for Sports Game Summarization. As shown in the above Figure, the baseline framework first selects important commentary sentences from original live commentary documents through a text classification model. `Ck` represents each commentary sentence and `Cik` denotes each selected important sentence. Further, we should convert each selected sentence to a news-style sentence through an NLG model. `Rik` is the generated sentence corresponding to `Cik`.
 
 #### 2.1 Selector
 The selector is a text classification model. In our work, we resort to the following tookits:
