@@ -32,7 +32,7 @@ The selector is a text classification model. In our work, we resort to the follo
 These two toolkits are very useful for buiding a Chinese text classification system.
 
 #### 2.2 Rewriter
-The rewriter is a generative model. Existing works typically employ PTGen (See, ACL 2017), mBART, mT5 et al.
+The rewriter is a generative model. Existing works typically employ [PTGen (See, ACL 2017)](https://arxiv.org/abs/1704.04368), mBART, mT5 et al.
 
 For PTGen, the [pointer_summarizer](https://github.com/atulkum/pointer_summarizer) toolkit is widely used. I also recommend the [implementation](https://github.com/xcfcode/PLM_annotator/tree/main/pgn) released by Xiachong Feng in his dialogue summarization work. Both of implementations are convenient. Please note that if u choose to use PTGen as rewriter, you should select a pre-trained word embedding to help model achieve great performance ([Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors) is helpful).
 
