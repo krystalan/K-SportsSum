@@ -7,7 +7,7 @@
 
 In this work, we propose K-SportsSum dataset as well as the KES model.   
 - K-SportsSum: It has 7854 sports game summarization samples together with a large-scale knowledge corpus containing information of 523 sports teams and 14k+ sports players.
-- KES: a NEW sports game summarizatio model based on mT5.
+- KES: a NEW sports game summarization model based on mT5.
 
 
 ### 1. K-SportsSum Dataset
