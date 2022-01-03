@@ -85,7 +85,7 @@ A1: **SportsSum (Huang et al. AACL 2020)** is the first large-scale Sports Game 
 Q2: There is less code about sports game summarization.     
 A2: Yeah, I know that. All existing works follow the pipeline paradigm to build sports game summarization systems. They may have two or three steps together with a pseudo label construction process. Thus, the code is too messy. For the solution, we 1) release a tutorial for building a two-step baseline for Sports Game Summarization (See Section2 in this page); 2) build an end-to-end model for public use (Work in progress, maybe will be published in 2022, but there is no guarantee. If you have experience of publishing NLP (especially NLG) papers and want to do this work with me, please feel free to write an email to me, jawang1[at]suda.edu.cn).  
 
-Q3: About position embedding in mT5.
+Q3: About position embedding in mT5.    
 A3: Position embedding of mT5 is set to zero vector since it uses relative position embeddings in self-attention.
 
 Q4: Any questions and suggestions?    
