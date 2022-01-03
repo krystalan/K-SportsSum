@@ -40,7 +40,7 @@ Note that, if u want to inference with a trained model, remember to initialize t
 #### 2.3 Construct Training Samples for Selector and Rewriter
 In order to construct training samples for selector and rewriter, we should map each new sentence to corresponding commentary sentence, if possible. (If u do not understand it, please see more details in Section3.1 of [SportsSum2.0](https://arxiv.org/abs/2110.05750)).
 
-Thus, the core content of this processing is calculate the ROUGE scores and BERTScore given two Chinese sentences.   
+Thus, the core content of this process is calculating the ROUGE scores and BERTScore given two Chinese sentences.   
 - ROUGE: you can use [multilingual_rouge_scoring](https://github.com/csebuetnlp/xl-sum/tree/master/multilingual_rouge_scoring) toolkit to calculate the Chinese ROUGE Scores. Note that, the [py-rouge](https://github.com/Diego999/py-rouge) and [rouge](https://github.com/pltrdy/rouge) toolkits are not suitable for Chinese.
 - BERTScore: Please find more details in [bert_score](https://github.com/Tiiiger/bert_score).
 
