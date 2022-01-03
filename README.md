@@ -11,6 +11,33 @@ Data will be released after approval process.（Before the Spring Festival）
     <br>
 </p>
 
+In this Section, we introduce how to build two-step baseline system for Sports Game Summarization. As the above Figure shown, the baseline framework first select important commentary sentences from original live commentary documents through a text classification model. Ck represents each commentary sentence and Cik denotes each selected important sentence. Further, we should convert each selected sentence to news-style sentence through a NLG model. Rik is the generated sentence corresponding to Cik.
+
+#### 2.1 Selector
+The selector is a text classification model. In our work, we resort to the following tookits:
+- [Chinese-Text-Classification-Pytorch](https://github.com/649453932/Chinese-Text-Classification-Pytorch): This tookit includes multiple codes (both training and inference) of text classification model before BERT era, such as TextCNN.
+- [Bert-Chinese-Text-Classification-Pytorch](https://github.com/649453932/Bert-Chinese-Text-Classification-Pytorch): This tookit contains text classification codes after BERT era, e.g., BERT, ERNIE.
+These two tookits are very useful for buiding a Chinese text classification system.
+
+#### 2.2 Rewriter
+The rewriter is a NLG model. Existing works typically employ PTGen (See, ACL 2017), mBART, mT5 et al.
+
+For PTGen, the [pointer_summarizer](https://github.com/atulkum/pointer_summarizer) tookit is widely used. I also recommend the [implementation](https://github.com/xcfcode/PLM_annotator/tree/main/pgn) released by Xiachong Feng in his dialogue summarization work. Both of implementations are convenient. Please note that if u choose to use PTGen as rewriter, you should select a pre-trained word embedding to help model achieve great performance ([Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors) is helpful).
+
+For mBART, mT5 et al. We use the implementations of [Huggingface Transformers Library](https://huggingface.co/docs/transformers/index). I release the corresponding training and inference codes for public use (See `rewriter.py`)  
+For training, you can run commands like this:
+```sh
+python rewriter.py --device_id 0
+```
+For evaluation, the command may like this:
+```sh
+python rewriter.py --device_id 0 --test
+```
+Note that, if u want to inference with trained model, remember to initialize the model with corresponding `.ckpt` file.
+
+#### 2.3 Construct Training Samples for Selector and Rewriter
+
+
 ### 3. KES model
 Code will be published once the author of this repo has time. （Around conference date of WSDM'22）
 
