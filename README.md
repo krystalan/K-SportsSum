@@ -5,6 +5,8 @@
     <br>
 </p>
 
+This repository contains data and code for the WSDM 2022 paper [*Knowledge Enhanced Sports Game Summarization*](https://arxiv.org/abs/2111.12535).
+
 In this work, we propose K-SportsSum dataset as well as the KES model.   
 - K-SportsSum: It has 7854 sports game summarization samples together with a large-scale knowledge corpus containing information of 523 sports teams and 14k+ sports players.
 - KES: a NEW sports game summarization model based on mT5.
