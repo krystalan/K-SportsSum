@@ -1,4 +1,12 @@
 # Knowledge Enhanced Sports Game Summarization
+<p align="center">
+    <br>
+    <img src="./pics/overall.png" width="900"/>
+    <br>
+</p>
+In this work, we propose K-SportsSum datasets as well as the KES model.   
+- K-SportsSum: It has 7854 sports game summarization samples together with a large-scale knowledge corpus containing information of 523 sports teams and 14k+ sports players.
+- KES: a NEW sports game summarizatio model based on mT5.
 
 
 ### 1. K-SportsSum Dataset
@@ -75,10 +83,13 @@ Q1: What the differences among SportsSum, SportsSum2.0, SGSum and K-SportsSum?
 A1: **SportsSum (Huang et al. AACL 2020)** is the first large-scale Sports Game Summarization dataset which has 5428 samples. Though its wonderful contribution, the SportsSum dataset has about 15% noisy samples. Thus, **SportsSum2.0 (Wang et al, CIKM 2021)** cleans the original SportsSum and obtains 5402 samples (26 bad samples in SportsSum are removed). Following previous works, **SGSum (Non-Archival Papers, 未正式发表)** collects and cleans a large amount of data from massive games. It has 7854 samples. **K-SportsSum (Wang et al. WSDM 2022)** shuffle and randomly divide the **SGSum**. Furthermore, **K-SportsSum** has a large-scale knowledge corpus about sports teams and players, which could be useful for alleviating the knowledge gap issue (See K-SportsSum paper).
 
 Q2: There is less code about sports game summarization.     
-A2: Yeah, I know that. All existing works follow the pipeline paradigm to build sports game summarization systems. They may have two or three steps together with a pseudo label construction process. Thus, the code is too messy. For the solution, we 1) release a tutorial for building a two-step baseline for Sports Game Summarization (See Section2 in this page); 2) build an end-to-end model for public use (Work in progress, maybe will be published in 2022, but there is no guarantee. If you have experience of publishing NLP (especially NLG) papers and want to do this work with me, please feel free to write an email to me, jawang1[at]suda.edu.cn).
+A2: Yeah, I know that. All existing works follow the pipeline paradigm to build sports game summarization systems. They may have two or three steps together with a pseudo label construction process. Thus, the code is too messy. For the solution, we 1) release a tutorial for building a two-step baseline for Sports Game Summarization (See Section2 in this page); 2) build an end-to-end model for public use (Work in progress, maybe will be published in 2022, but there is no guarantee. If you have experience of publishing NLP (especially NLG) papers and want to do this work with me, please feel free to write an email to me, jawang1[at]suda.edu.cn).  
 
-Q3: Any questions and suggestions?    
-A3: Please feel free to contact me (jawang1[at]suda.edu.cn).
+Q3: About position embedding in mT5.
+A3: Position embedding of mT5 is set to zero vector since it uses relative position embeddings in self-attention.
+
+Q4: Any questions and suggestions?    
+A4: Please feel free to contact me (jawang1[at]suda.edu.cn).
 
 ### Acknowledgement
 Jiaan Wang would like to thank **[KW Lab, Fudan Univ.](http://kw.fudan.edu.cn/)** and **[iFLYTEK AI Research, Suzhou](https://www.iflytek.com/index.html)** for their helpful discussions and GPU device support.
