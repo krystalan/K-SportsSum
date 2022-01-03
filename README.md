@@ -1,12 +1,18 @@
 # Knowledge Enhanced Sports Game Summarization
 
-Cooming Soon! :)  
 
-Data will be released after approval process.  
+### 1. K-SportsSum Dataset
+Data will be released after approval process.（Before the Spring Festival） 
 
-Code will be published once the author of this repo has time.
+### 2. Baseline Model Construction
 
-## Existing Works
+### 3. KES model
+Code will be published once the author of this repo has time. （Around conference date of WSDM'22）
+
+### 4. Existing Works
+To facilitate researchers to efficiently comprehend and follow the Sports Game Summarization task, we write a Chinese survey post: [《体育赛事摘要任务概览》](https://mp.weixin.qq.com/s/EidRYB_80AhRclz-mryVhQ), where we also discuss some future directions and give our thoughts.
+
+We list and classify existing works of Sports Game Summarization:
 
 | Paper | Conference/Journal | Data/Code | Category |
 | :--: | :--: | :--: | :--: |
@@ -25,3 +31,13 @@ The concepts used in Category are illustrated as follows:
 - `Ext.`: Extractive sports game summarization method.
 - `Ext.+Temp.`: The method first extracts important commentary sentence and further utilize the human-labeled template to convey each commentary sentence to a news sentence.
 - `Ext.+Abs.`: The method first extracts important commentary sentence and further utilize the seq2seq model to convey each commentary sentence to the news sentence.
+
+### Q&A
+Q1: What the differences among SportsSum, SportsSum2.0, SGSum, K-SportsSum?   
+A1: **SportsSum (Huang et al. AACL 2020)** is the first large-scale Sports Game Summarization dataset which has 5428 samples. Though its wonderful contribution, the SportsSum dataset has about 15% noisy samples. Thus, **SportsSum2.0 (Wang et al, CIKM 2021)** cleans the original SportsSum and obtains 5402 samples (26 bad samples in SportsSum are removed) of high-quality. **SGSum (Non-Archival Papers, 未正式发表)** follows previous work and collects a large amount of data from massive games. It has 7854 samples. **K-SportsSum (Wang et al. WSDM 2022)** shuffle and randomly divide the **SGSum**. Furthermore, **K-SportsSum** has a large-scale knowledge corpus about sports teams and players.
+
+Q2: There is less code about sports game summarization.     
+A2: Yeah, I know that. All existing works follow the pipeline paradigm to build sports game summarization systems. They may have two or three steps together with a pseudo label construction process. Thus, the code is too messy. For the solution, we 1) release a tutorial for building a two-step baseline for Sports Game Summarization; 2) build an end-to-end model for public use (Work in progress, maybe will be published in 2022, but there is no guarantee).
+
+Q3: Any questions and suggestions?    
+A3: Please feel free to contact me (jawang1[at]suda.edu.cn).
