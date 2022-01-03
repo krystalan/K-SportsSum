@@ -5,6 +5,11 @@
 Data will be released after approval process.（Before the Spring Festival） 
 
 ### 2. Baseline Model Construction
+<p align="center">
+    <br>
+    <img src="./pics/baseline.png" width="500"/>
+    <br>
+</p>
 
 ### 3. KES model
 Code will be published once the author of this repo has time. （Around conference date of WSDM'22）
