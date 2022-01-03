@@ -43,7 +43,7 @@ Q3: Any questions and suggestions?
 A3: Please feel free to contact me (jawang1[at]suda.edu.cn).
 
 ### Acknowledgement
-Thanks for your interest in our work. Jiaan Wang would like to thank **[KW Lab, Fudan Univ.](http://kw.fudan.edu.cn/)** and **iFLYTEK AI Research, Suzhou** for their helpful discussions and GPU device support.
+Jiaan Wang would like to thank **[KW Lab, Fudan Univ.](http://kw.fudan.edu.cn/)** and **[iFLYTEK AI Research, Suzhou](https://www.iflytek.com/index.html)** for their helpful discussions and GPU device support.
 
 ### Citation
 If you find this project is useful or use the data in your work, please consider cite our paper:
