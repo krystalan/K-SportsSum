@@ -36,7 +36,8 @@ The rewriter is a generative model. Existing works typically employ PTGen (See, 
 
 For PTGen, the [pointer_summarizer](https://github.com/atulkum/pointer_summarizer) toolkit is widely used. I also recommend the [implementation](https://github.com/xcfcode/PLM_annotator/tree/main/pgn) released by Xiachong Feng in his dialogue summarization work. Both of implementations are convenient. Please note that if u choose to use PTGen as rewriter, you should select a pre-trained word embedding to help model achieve great performance ([Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors) is helpful).
 
-For mBART, mT5 et al. We use the implementations of [Huggingface Transformers Library](https://huggingface.co/docs/transformers/index). I release the corresponding training and inference codes for public use (See `rewriter.py`, `mBART-50` is used as rewriter in this code.)    
+For mBART, mT5 et al. We use the implementations of [Huggingface Transformers Library](https://huggingface.co/docs/transformers/index). I release the corresponding training and inference codes for public use (See `rewriter.py`, `mBART-50` is used as rewriter in this code.)     
+Requirements: pytorch-lighting 0.8.5; transformers >= 4.4; torch >= 1.7
 
 For training, you can run commands like this:
 ```sh
