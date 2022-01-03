@@ -11,7 +11,7 @@ Data will be released after approval process.（Before the Spring Festival）
     <br>
 </p>
 
-In this Section, we introduce how to build a two-step baseline system for Sports Game Summarization. As shown in the above Figure, the baseline framework first selects important commentary sentences from original live commentary documents through a text classification model. `Ck` represents each commentary sentence and `Cik` denotes each selected important sentence. Further, we should convert each selected sentence to a news-style sentence through an NLG model. `Rik` is the generated sentence corresponding to `Cik`.
+In this Section, we introduce how to build a two-step baseline system for Sports Game Summarization. As shown in the above Figure, the baseline framework first selects important commentary sentences from original live commentary documents through a text classification model. `Ck` represents each commentary sentence and `Cik` denotes each selected important sentence. Further, we should convert each selected sentence to a news-style sentence through a generative model. `Rik` is the generated sentence corresponding to `Cik`.
 
 #### 2.1 Selector
 The selector is a text classification model. In our work, we resort to the following toolkits:
@@ -21,7 +21,7 @@ The selector is a text classification model. In our work, we resort to the follo
 These two toolkits are very useful for buiding a Chinese text classification system.
 
 #### 2.2 Rewriter
-The rewriter is a NLG model. Existing works typically employ PTGen (See, ACL 2017), mBART, mT5 et al.
+The rewriter is a generative model. Existing works typically employ PTGen (See, ACL 2017), mBART, mT5 et al.
 
 For PTGen, the [pointer_summarizer](https://github.com/atulkum/pointer_summarizer) toolkit is widely used. I also recommend the [implementation](https://github.com/xcfcode/PLM_annotator/tree/main/pgn) released by Xiachong Feng in his dialogue summarization work. Both of implementations are convenient. Please note that if u choose to use PTGen as rewriter, you should select a pre-trained word embedding to help model achieve great performance ([Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors) is helpful).
 
