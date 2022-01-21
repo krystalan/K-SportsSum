@@ -60,7 +60,7 @@ Thus, the core content of this process is calculating the ROUGE scores and BERTS
 ### 3. KES model
 Code will be published once the author of this repo has time. （Around conference date of WSDM'22）
 
-### 4. Existing Works
+### Existing Works
 To facilitate researchers to efficiently comprehend and follow the Sports Game Summarization task, we write a Chinese survey post: [《体育赛事摘要任务概览》](https://mp.weixin.qq.com/s/EidRYB_80AhRclz-mryVhQ), where we also discuss some future directions and give our thoughts.
 
 We list and classify existing works of Sports Game Summarization:
