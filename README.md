@@ -13,8 +13,7 @@ In this work, we propose K-SportsSum dataset as well as the KES model.
 
 
 ### 1. K-SportsSum Dataset
-The K-SportsSum dataset is available [here](https://drive.google.com/file/d/1RGWIz3Nw_kzfgIYo_Ke9elLfPOg0rS4V/view?usp=sharing).   
-You can obtain five files from the shared link:   
+The K-SportsSum dataset is available [here](https://drive.google.com/file/d/1RGWIz3Nw_kzfgIYo_Ke9elLfPOg0rS4V/view?usp=sharing). You can obtain five files from the shared link:   
 - `train.json`, `val.json` and `test.json` are the core data files of K-SportsSum, each of which contains live commentaries and news reports of sports games.
 - `player_knowledge.json` contains background knowledge of 14,724 sports players.
 - `team_knowledge.json` contains background information of 523 sports teams.
