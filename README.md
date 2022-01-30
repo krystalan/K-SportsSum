@@ -61,7 +61,7 @@ Thus, the core content of this process is calculating the ROUGE scores and BERTS
 - BERTScore: Please find more details in [bert_score](https://github.com/Tiiiger/bert_score).
 
 ### 3. KES model
-Code will be published once the author of this repo has time. （Around conference date of WSDM'22）
+Code will be published once the author of this repo has time.   
 
 ### Existing Works
 To facilitate researchers to efficiently comprehend and follow the Sports Game Summarization task, we write a Chinese survey post: [《体育赛事摘要任务概览》](https://mp.weixin.qq.com/s/EidRYB_80AhRclz-mryVhQ), where we also discuss some future directions and give our thoughts.
