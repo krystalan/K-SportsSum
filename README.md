@@ -105,11 +105,10 @@ Jiaan Wang would like to thank **[KW Lab, Fudan Univ.](http://kw.fudan.edu.cn/)*
 ### Citation
 If you find this project is useful or use the data in your work, please consider cite our paper:
 ```
-@article{Wang2021KnowledgeES,
+@article{Wang2022KnowledgeES,
   title={Knowledge Enhanced Sports Game Summarization},
   author={Jiaan Wang and Zhixu Li and Tingyi Zhang and Duo Zheng and Jianfeng Qu and An Liu and Lei Zhao and Zhigang Chen},
-  journal={ArXiv},
-  year={2021},
-  volume={abs/2111.12535}
+  journal={Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
+  year={2022}
 }
 ```
